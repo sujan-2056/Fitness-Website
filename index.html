@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/dbad2e82e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- --------------------- owl.carousel.min.css ------------------------  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- -------------------------------- owl.theme.default.min.css ------------------------  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- --------Bootstrap.css File ----------  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- ------------ Fonts awesome icon-----------  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- ------------Costume.css file---------------  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .preloader {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        visibility: visible;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+      }
+      .preload {
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .hide-preloader {
+        z-index: -99;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body id="totop">
+    <div class="preloader">
+      <img src="./preloader gif.gif" alt="preloader" class="preload" />
+    </div>
+
+    <!-- ----START Navigation bar-----  -->
+    <input type="checkbox" id="btn" />
+    <label for="btn" class="menu-btn">
+      <i class="fas fa-bars" id="btn3"></i>
+    </label>
+
+    <div id="navbar" class="nav flex">
+      <div class="logo">
+        <img src="image/logo fitness.png" />
+      </div>
+      <div class="nav-link">
+        <a href="#">HOME</a>
+        <a href="#ourclub">OUR CLUB</a>
+        <a href="#membership3">MEMBERSHIP</a>
+        <a href="#aboutus">ABOUT US</a>
+        <a href="#testamonial5">TESTAMONIAL</a>
+        <a href="#contact6">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- -X---END Navigation bar----X-  -->
+
+    <!-- ========== START top head ============  -->
+
+    <div class="login">
+      <div class="question">
+        <div class="any-quest">
+          <h4><a href="#">Have any question?</a></h4>
+        </div>
+        <div class="quest-contact clearfix">
+          <i class="fas fa-phone-square-alt icon-small"></i>
+          <h4 class="float">025-451852</h4>
+        </div>
+        <div class="quest-mail clearfix">
+          <i class="fas fa-envelope icon-small"></i>
+          <h4 class="float">example200@gmail.com</h4>
+        </div>
+      </div>
+      <div class="register">
+        <button type="button">Register</button>
+        <button type="button">Login</button>
+      </div>
+    </div>
+    <!-- =====X===== END top head =========X===  -->
+
+    <!-- ----------SEC-1-HEADER-------------  -->
+
+    <div class="header">
+      <div class="text" data-aos="fade-left">
+        <h1 data-aos="fade-left" data-aos-delay="200">YOU CAN<br />DO THIS</h1>
+        <span data-aos="fade-left" data-aos-delay="300">21-DAY FREE TRIAL</span>
+        <p data-aos="fade-left" data-aos-delay="400">
+          With this free trial, now you can gain free acess to all of the tools,
+          resources, and knowledge<br />you need to be best version of yourself
+          in 21 days.
+        </p>
+        <button type="button" data-aos="fade-left" data-aos-delay="500">
+          CLAIM OFFER
+        </button>
+      </div>
+    </div>
+
+    <!-- ------X---- END SEC-1-HEADER-------X------  -->
+
+    <!-- ----------- START DOWN SECTION---------- -->
+
+    <div class="down1 flex">
+      <div class="box-1">
+        <h2>21-Day Free Trial</h2>
+        <p>Get full access to all clubs and anemities</p>
+        <button>CLAIM PASS</button>
+      </div>
+
+      <div class="box-1">
+        <h2>On-Demand Fitness</h2>
+        <p>Take O2 anywhere with the all new GO2 Fitness</p>
+        <button>GET STARTED</button>
+      </div>
+
+      <div class="box-1">
+        <h2>Virtual Training Sessions</h2>
+        <p>1-on-1 tranining while you are at home</p>
+        <button>CONTACT A TRAINER</button>
+      </div>
+    </div>
+
+    <!-- ----X-------END DOWN SECTION----X------ -->
+
+    <!-- ----------SEC-2-OUR CLUB-------------  -->
+
+    <div class="our-club" id="ourclub">
+      <div class="club-head">
+        <h2><span>Our Club</span></h2>
+      </div>
+      <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="latest">Latest</li>
+        <li class="list" data-filter="upcomming">Upcomming</li>
+        <li class="list" data-filter="following">Following</li>
+      </ul>
+
+      <div class="gallery">
+        <div class="item latest">
+          <img src="image/sec-2-ourClub/Screenshot  (1).png" />
+        </div>
+        <div class="item upcomming">
+          <img src="image/sec-2-ourClub/Screenshot  (2).png" />
+        </div>
+        <div class="item following">
+          <img src="image/sec-2-ourClub/Screenshot  (3).png" />
+        </div>
+        <div class="item latest">
+          <img src="image/sec-2-ourClub/Screenshot  (4).png" />
+        </div>
+        <div class="item upcomming">
+          <img src="image/sec-2-ourClub/Screenshot  (5).png" />
+        </div>
+        <div class="item following">
+          <img src="image/sec-2-ourClub/Screenshot  (6).png" />
+        </div>
+        <div class="item upcomming">
+          <img src="image/sec-2-ourClub/Screenshot  (7).png" />
+        </div>
+        <div class="item upcomming">
+          <img src="image/sec-2-ourClub/Screenshot  (8).png" />
+        </div>
+        <div class="item following">
+          <img src="image/sec-2-ourClub/Screenshot  (9).png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ----X------END SEC-2-OUR CLUB-------X------  -->
+
+    <!-- ----------START SEC-3-MEMBERSHIP-------------  -->
+
+    <div class="membership" id="membership3">
+      <div class="membership-head">
+        <h2><span>Membership Levels</span></h2>
+      </div>
+      <div class="owl-carousel owl-theme membership-flex">
+        <div class="member-club">
+          <div class="cost">
+            <h2>$22.99</h2>
+            <p>Monthly</p>
+          </div>
+          <div class="club">
+            <h5>CLUB</h5>
+            <p>24-Hour Access</p>
+            <p>Multi Club Access</p>
+            <p>Group Exercise Classes</p>
+          </div>
+        </div>
+        <div class="member-club">
+          <div class="cost">
+            <h2>$29.99</h2>
+            <p>Monthly</p>
+          </div>
+          <div class="club">
+            <h5>PREMIUM</h5>
+            <p>24-Hour Access</p>
+            <p>Multi Club Access</p>
+            <p>Group Exercise Classes</p>
+            <p>Kids Club</p>
+            <p>Tanning</p>
+            <p>Hydro Lounge</p>
+            <p>Red Light Therapy</p>
+            <p>Women’s Training Studio</p>
+            <p>Pulse Studio</p>
+            <p>Cycle Studio</p>
+          </div>
+        </div>
+        <div class="member-club">
+          <div class="cost">
+            <h2>$22.99</h2>
+            <p>Monthly</p>
+          </div>
+          <div class="club">
+            <h5>CLUB</h5>
+            <p>24-Hour Access</p>
+            <p>Multi Club Access</p>
+            <p>Group Exercise Classes</p>
+            <p>Kids Club</p>
+            <p>Tanning</p>
+            <p>Hydro Lounge</p>
+            <p>Red Light Therapy</p>
+            <p>Women’s Training Studio</p>
+            <p>Pulse Studio</p>
+            <p>Cycle Studio</p>
+            <p>Unlimited Burn Zone</p>
+            <p>Body Composition Analysis</p>
+            <p>Unlimited Tanning Upgrades</p>
+            <p>Free Monthly PT Assessment</p>
+            <p>25% Off All Retail</p>
+            <p>12 Free Guest Passes a Year</p>
+          </div>
+        </div>
+        <div class="member-club offer-club">
+          <div class="offer-cost">
+            <h2>$22.99</h2>
+            <p>Monthly</p>
+          </div>
+          <div class="club">
+            <h5>
+              PLATINUM + 3 TRAINING<br />SESSIONS FOR $99 + <br />FIRST MONTH
+              FREE + FREE BOXING GLOVES
+            </h5>
+            <p>24-Hour Access</p>
+            <p>Multi Club Access</p>
+            <p>Group Exercise Classes</p>
+            <p>Kids Club</p>
+            <p>Tanning</p>
+            <p>Hydro Lounge</p>
+            <p>Red Light Therapy</p>
+            <p>Women’s Training Studio</p>
+            <p>Pulse Studio</p>
+            <p>Cycle Studio</p>
+            <p>Unlimited Burn Zone</p>
+            <p>Body Composition Analysis</p>
+            <p>Unlimited Tanning Upgrades</p>
+            <p>Free Monthly PT Assessment</p>
+            <p>25% Off All Retail</p>
+            <p>12 Free Guest Passes a Year</p>
+            <p>3 Personal Training Sessions for $99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------X----END SEC-3-MEMBERSHIP-------X------  -->
+
+    <!-- ----------START SEC-4-ABOUT US-------------  -->
+
+    <div class="about-us" id="aboutus">
+      <div class="about-head">
+        <h2><span>The Club Fitness Difference</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-clearfix">
+          <div class="about-img">
+            <img src="image/sec-4-abtUs/crop (1).jpg" />
+            <div class="overlay">
+              <div class="text">
+                <h4>INCLUSIVE</h4>
+                <p>
+                  At Club Fitness, our gym doors are open to everyone from all
+                  walks of life. No matter their shape, size, age, or experience
+                  level, we are dedicated to helping each person reach their
+                  personal health and fitness goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="image/sec-4-abtUs/crop (2).jpg" />
+            <div class="overlay">
+              <div class="text">
+                <h4>COMMITTED</h4>
+                <p>
+                  For over 35 years, Club Fitness has been committed to the
+                  success of every BODY we serve. We are progressive and
+                  forward-thinking, constantly adapting to the evolving health
+                  and fitness needs of our members.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="image/sec-4-abtUs/crop (3).jpg" />
+            <div class="overlay">
+              <div class="text">
+                <h4>ACCESSIBLE</h4>
+                <p>
+                  We make fitness totally accessible to everybody and every BODY
+                  type. We are the only St. Louis employee-owned gym with more
+                  locations and more amenities than anyone else.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-clearfix">
+          <div class="about-img">
+            <img src="image/sec-4-abtUs/crop (4).jpg" />
+            <div class="overlay">
+              <div class="text">
+                <h4>VALUE</h4>
+                <p>
+                  We offer more locations, more amenities, more classes, and
+                  more equipment with gym membership options that can fit any
+                  budget.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="image/sec-4-abtUs/crop (5).jpg" />
+            <div class="overlay">
+              <div class="text">
+                <h4>EMPLOYEE OWNED</h4>
+                <p>
+                  Club Fitness has been an employee-owned gym since 2015. As
+                  owners, our team members take a lot of pride in providing the
+                  best possible gym experience for our members. Clean,
+                  functional, and friendly are the baseline standards our team
+                  members strive for every day.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="image/sec-4-abtUs/crop (6).jpg" />
+            <div class="overlay">
+              <div class="text">
+                <h4>LOCALLY OWNED</h4>
+                <p>
+                  We opened our first location in St. Louis in 1983. Ever since
+                  then, Club Fitness has been committed to lifting its members
+                  to healthier, happier lives through fitness. We care about St.
+                  Louis because we are from St. Louis. We are proud to
+                  #LiftLocal!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------X----END SEC-4-ABOUT US-------X------  -->
+
+    <!-- ----------START SEC-5-TEATAMONIAL-------------  -->
+
+    <div class="testominal-head" id="testamonial5">
+      <h2><span>Testamonial</span></h2>
+    </div>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="image/sec-5-testamonial/screenshot (1).png" />
+        <h4>This is Shriya</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur<br />adipisicing elit.
+          Blanditiis esse,<br />iste nihil tenetur consequuntur explicabo.
+        </p>
+      </div>
+      <div class="item">
+        <img src="image/sec-5-testamonial/screenshot (2).png" />
+        <h4>This is Jasun</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur<br />adipisicing elit.
+          Blanditiis esse,<br />iste nihil tenetur consequuntur explicabo.
+        </p>
+      </div>
+      <div class="item">
+        <img src="image/sec-5-testamonial/screenshot (3).png" />
+        <h4>This is Kushal</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur<br />adipisicing elit.
+          Blanditiis esse,<br />iste nihil tenetur consequuntur explicabo.
+        </p>
+      </div>
+      <div class="item">
+        <img src="image/sec-5-testamonial/screenshot (4).png" />
+        <h4>This is Meena</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur<br />adipisicing elit.
+          Blanditiis esse,<br />iste nihil tenetur consequuntur explicabo.
+        </p>
+      </div>
+      <div class="item">
+        <img src="image/sec-5-testamonial/screenshot (5).png" />
+        <h4>This is Aviyana</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur<br />adipisicing elit.
+          Blanditiis esse,<br />iste nihil tenetur consequuntur explicabo.
+        </p>
+      </div>
+      <div class="item">
+        <img src="image/sec-5-testamonial/screenshot (6).png" />
+        <h4>This is AaYAM</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur<br />adipisicing elit.
+          Blanditiis esse,<br />iste nihil tenetur consequuntur explicabo.
+        </p>
+      </div>
+    </div>
+
+    <!-- ------X----END SEC-5-TEATAMONIAL-------X------  -->
+
+    <!-- ----------START SEC-6-CONTACT-------------  -->
+
+    <div class="contact-head" id="contact6">
+      <h2><span>Contact Us</span></h2>
+    </div>
+    <div class="contact">
+      <div class="contact-left">
+        <form method="POST">
+          <label for="fname">First Name:</label><br />
+          <input
+            type="text"
+            id="fname"
+            placeholder="Sujan"
+            name="fname"
+          /><br /><br />
+          <label for="lname">Last Name:</label><br />
+          <input
+            type="text"
+            id="lname"
+            placeholder="Khadka"
+            name="lname"
+          /><br /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="text"
+            id="email"
+            placeholder="example@gmail.com"
+            name="email"
+          /><br /><br />
+          <label for="fnumber">Phone Number:</label><br />
+          <input
+            type="text"
+            id="fnumber"
+            placeholder="98114584**"
+            name="fnumber"
+          /><br /><br />
+          <label for="Address">Address:</label><br />
+          <input
+            type="text"
+            id="Address"
+            placeholder="Nepal"
+            name="Address"
+          /><br /><br />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="contact-right">
+        <img src="../Fitness/image/location map.png" />
+        <div class="address">
+          <h4>Address:</h4>
+          <p>sunsari, nepal</p>
+          <br />
+          <h4>Phone Number:</h4>
+          <p>025-2546**/98114584**</p>
+          <br />
+          <h4>Email:</h4>
+          <p>prefitness@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------X----END SEC-6-CONTACT-------X------  -->
+
+    <!-- ----------START SEC-7-footer-------------  -->
+
+    <div class="footer">
+      <p>
+        <span><a href="#">1-866-551-CLUB</a></span> ©2021 Club Fitness | The Gym
+        for Every BODY in St. Louis. | PRE Fitness Marketing by Timmermann Group
+      </p>
+    </div>
+
+    <!-- ------X----END SEC-7-footer-------X------  -->
+
+    <!-- ----------START  social media icon -------------  -->
+
+    <div class="social-media">
+      <a href="#" class="facebook"><i class="fab fa-facebook-f"></i>Facebook</a>
+      <a href="#" class="tiktok"><i class="fab fa-tiktok"></i>Tiktok</a>
+      <a href="#" class="instagram"
+        ><i class="fab fa-instagram"></i>instagram</a
+      >
+      <a href="#" class="twitter"><i class="fab fa-twitter"></i>Twitter</a>
+      <a href="#" class="linkedin"
+        ><i class="fab fa-linkedin-in"></i>Linked-In</a
+      >
+      <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+    </div>
+
+    <!-- ------X----END social media icon -------X------  -->
+
+    <div class="arrow">
+      <span
+        ><a href="#totop"><i class="fas fa-arrow-up"></i></a
+      ></span>
+    </div>
+
+    <script>
+      // preloader
+      const preloader = document.querySelector('.preloader');
+
+      window.addEventListener('load', function () {
+        preloader.classList.add('hide-preloader');
+      });
+    </script>
+
+    <script type="text/javascript">
+      var lastScrollTop = 0;
+      navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = '-80px';
+        } else {
+          navbar.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+
+    <!-- ---------------------------jquery/3.6.0/jquery.min.js --------------------  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ---------------------------owl.carousel.min.js----------------------------  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          750: {
+            items: 2,
+          },
+          1100: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <!-- ---------------------------jquery/3.6.0.js  image filter----------------------------  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- -----------Jquery.js file ---------  -->
+    <script src="js/jquery3.6.0.js"></script>
+
+    <!-- --------Bootstrap.js File ----------  -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- --------filter isotop.min.js------- -->
+    <script src="vendor/isotop/isotop.min.js"></script>
+
+    <!-- -----------AOS Library-----------  -->
+    <script src="js/aos.js"></script>
+
+    <!-- ----------------Main JavaScript------------  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
